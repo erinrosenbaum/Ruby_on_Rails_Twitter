@@ -83,6 +83,7 @@ footer {
     color: $gray;
     &:hover {
       color: $gray-darker;
+      background-color: #EEEEEE;
     }
   }
   small {
@@ -202,5 +203,12 @@ input {
     overflow: auto;
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+.jumbotron > .btn {
+  color: white;
+  &:hover {
+    background-color: green;
   }
 }
