@@ -1,4 +1,4 @@
-<h1>Watercooler App</h1>
+<h1>DiddleClown</h1>
 
 <p>Hi <%= @user.name %>,</p>
 
@@ -7,3 +7,6 @@ Welcome to the Application! Click on the link below to activate your account:
 </p>
 
 <%= link_to "Activate", edit_account_activation_url(@user.activation_token, email: @user.email) %>
+
+DiddleClown uses a service called Gravatar to provide user profile pictures. Having a profile picture is not required, but Gravatar is a free, easy service that will provide an avatar (profile picture) across many websites simply by signing up with the same email address. Here's the link if you're interested:
+<a href="http://www.gravatar.com">Gravatar - Globally Recognized Avatars</a>
