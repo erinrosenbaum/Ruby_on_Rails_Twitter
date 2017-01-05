@@ -4,7 +4,10 @@
     <title><%= full_title(yield(:title)) %></title>
     <%= render 'layouts/rails_default' %>
     <%= render 'layouts/shim' %>
-    <meta name="description" content="Awesome Website">
+    <meta property="og:url" content="www.diddleclown.com"/>
+    <meta property="og:title" content="DiddleClown"/>
+    <meta property="og:description" content="DiddleClown" />
+    <meta property="og:type" content="website"/>
   </head>
   <body>
     <%= render 'layouts/header' %>
