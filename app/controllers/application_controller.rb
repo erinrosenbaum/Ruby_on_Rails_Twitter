@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  force_ssl if: :ssl_configured?
   protect_from_forgery with: :exception
   include SessionsHelper
 
@@ -12,4 +13,9 @@ class ApplicationController < ActionController::Base
         redirect_to login_url
       end
     end
+
+  def ssl_configured?
+    !Rails.env.development?
+  end
+
 end
